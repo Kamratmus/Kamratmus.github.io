@@ -16,29 +16,15 @@
 
 <style>
 body {
-    background-color: #2d2d6d;
+    background-color: #2d2d2d;
     }
-    
-.videoContainer
-{
-    position:absolute;
-    height:100%;
-    width:100%;
-    overflow: hidden;
-}
-
-.videoContainer video
-{
-    min-width: 100%;
-    min-height: 100%;
-}
 
 }
 </style>
     
 <body>
 <div class="videoContainer">
-<video controls autoplay id="player" class="video-js vjs-default-skin" controls preload="none">
+<video controls autoplay id="player" style="display:block; margin: 0 auto;" class="video-js vjs-default-skin" controls preload="none">
     <source src="http://109.225.126.197:8080/hls/stream.m3u8" type="application/x-mpegURL" />
 </video>
 </div>

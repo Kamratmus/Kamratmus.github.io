@@ -1,3 +1,4 @@
+   
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -41,27 +42,32 @@
 	position:relative;
 	top:1px;
 }
-
+	      
+.flowplayer {
+   max-width: 1500px;
+}
               
         </style>
         
         
     <body>
-        <div id="player"></div>
+	    <div align="center">
+        <div id="player" align="center"></div>
         <script>
             var player = flowplayer("#player", {
                 clip: {
                     sources: [{
                         type: "application/x-mpegurl",
-                        src:  "http://109.225.126.197:8080/hls/painweb.m3u8"
+                        src:  "http://109.225.126.197:8080/hls/stream.m3u8"
                     }]
                 }
             });
-        </script>
-	     <p>
+        </script>	
+		    </div>
+       <p>
        </p>
 	    <div style="text-align:center;">
 		    <a href="#" class="myButton" onclick="location.href = 'index.html';">index</a>
 	    </div>
     </body>
-    </html>
+</html>

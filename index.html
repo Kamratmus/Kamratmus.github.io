@@ -1,80 +1,80 @@
-
 <html>
 	<head>
 		<title>Streamhoran</title>
 	</head>
-<style>
-body {
-	background-color: #2d2d2d;
-}
-.myButton {
-	-moz-box-shadow:inset -20px 3px 7px -50px #29bbff;
-	-webkit-box-shadow:inset -20px 3px 7px -50px #29bbff;
-	box-shadow:inset -20px 3px 7px -50px #29bbff;
-	background-color:#1781bf;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-	border-radius:4px;
-	border:1px solid #0b0e07;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:26px 72px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #263666;
 
+	<style>
+	body {
+		background-color: #2d2d2d;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
 
+	}
 
-}
-.myButton:hover {
-	background-color:#0688fa;
-}
-.myButton:active {
+	.myButton {
+		-moz-box-shadow:inset -20px 3px 7px -50px #29bbff;
+		-webkit-box-shadow:inset -20px 3px 7px -50px #29bbff;
+		box-shadow:inset -20px 3px 7px -50px #29bbff;
+		background-color:#1781bf;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+		border-radius:4px;
+		border:1px solid #0b0e07;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:17px;
+		padding:26px 72px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #263666;
+	}
 
-	position:relative;
-	top:1px;
-}
+	.myButton:hover {
+		background-color:#0688fa;
+	}
 
-.divider{
-    width:5px;
-    height:auto;
-    display:inline-block;
-}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
 
-</style>
+	#header{/*changed closing tags in html to: <div id="header"></div>*/
+	    position: fixed;
+	    top: 0px;
+	    height: 0px;
+	    left: 0px;
+	    right: 0px;
+	}
+	#divA{ 
+	    position: fixed;   
+	    bottom: 170px; /*no height but top/bottom values so containers height changes based on browsersize*/
+	    top: 0px;
+	    left: 4;
+	    right: 4;
+	}
 
-
-<div style="text-align:center;">
-
-<body>
-        &nbsp;
-	        &nbsp;
-	        &nbsp;
-	        &nbsp;
-	
+	</style>
+	<body background="backgroundmountains.jpg">
+<div id="header">
+		<center>
 <p>
-<img src="giphy.gif" style="width:571px;height:284px;">
-</p> 
-	        &nbsp;
-	        &nbsp;
-	        &nbsp;
-	        &nbsp;
+			<img src="backgroundcenter.png"  style="position: relative; bottom: 20px"/>
+
 <p>
-	
-
-<a href="#" class="myButton" onclick="location.href = 'kamrat.html';">kamrat</a>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-<a href="#" class="myButton" onclick="location.href = 'painweb.html';">painweb</a>
-
+			<img src="giphy.gif" style="width:571px;height:284px; position: relative; bottom: 860px"/>
 </p>
-</body>
-
+		</center>
 </div>
-
+<div id="divA">
+	<center>
+				<p>
+					<a href="#" class="myButton" onclick="location.href = 'kamrat.html';" style="position: relative; top: 550px;">kamrat</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#" class="myButton" onclick="location.href = 'painweb.html';" style="position: relative; top: 550px;">painweb</a>
+				</p>
+	</center>
+</div>	
+	</body>
 </html>

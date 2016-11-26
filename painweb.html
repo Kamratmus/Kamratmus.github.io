@@ -1,4 +1,4 @@
-   
+ 
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -46,16 +46,23 @@
 .flowplayer {
    max-width: 1500px;
 }
-              
+	#header{/*changed closing tags in html to: <div id="header"></div>*/
+		position: fixed;
+		top: 0px;
+		height: 0px;
+		left: 0px;
+		right: 0px;
+	}
         </style>
         
         
-    <body>
-	    <p>
-		    
-	    </p>
-	    <div align="center">
-        <div id="player" align="center"></div>
+    <body background="backgroundmountains.jpg">
+<div id="header">
+<center>
+	<img src="backgroundstream.png"  style="position: relative; bottom: 20px"/>
+</center>
+	    <div align="center" >
+        <div id="player" align="center" style="position: relative; bottom: 20px"></div>
         <script>
             var player = flowplayer("#player", {
                 clip: {
@@ -69,8 +76,8 @@
 		    </div>
        <p>
        </p>
-	    <div style="text-align:center;">
-		    <a href="#" class="myButton" onclick="location.href = 'index.html';">index</a>
+	    <div style="text-align:center; ">
+		    <a href="#" class="myButton" onclick="location.href = 'index.html';" style="position: relative; top: -200px;">index</a>
 	    </div>
     </body>
 </html>

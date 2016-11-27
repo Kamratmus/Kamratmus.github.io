@@ -2,7 +2,7 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Painweb Stream</title>
+        <title>Kamrat Stream</title>
         <!-- peer5 client & plugin -->
         <script src="//api.peer5.com/peer5.js?id=1g1804zz8gycb2qvg832"></script>
         <script src="//api.peer5.com/peer5.flowplayer.plugin.js"></script>
@@ -14,8 +14,13 @@
         
       <style>
         body {
-    background-color: #2d2d2d;
+		background-color: #2d2d2d;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		background-size:cover
          }
+
        .myButton {
 	-moz-box-shadow:inset -20px 3px 7px -50px #29bbff;
 	-webkit-box-shadow:inset -20px 3px 7px -50px #29bbff;
@@ -46,39 +51,48 @@
    max-width: 1500px;
 }
 	#header{/*changed closing tags in html to: <div id="header"></div>*/
-		position: fixed;
-		top: 0px;
-		height: 0px;
-		left: 0px;
-		right: 0px;
+   		 position: fixed;
+   		 left: 50%;
+   		 top: 50%;
+    		transform: translate(-50%, -50%);
+	}
+
+	#divA{ 
+	    position: absolute;   
+	    top: 50%;
+	    left: 50%;
+	transform: translate(-50%, -50%);
 	}
         </style>
         
         
-<body background="backgroundmountains.jpg" background-size="cover">
-	<div id="header">
-		<center>
-			<img src="backgroundstream.png"  style="position: relative; bottom: 20px"/>
-		</center>
-		<div align="center">
-       			<div id="player" align="center" style="position: relative; bottom: 1050px"></div>
-				<script>
-				    var player = flowplayer("#player", {
-					clip: {
-					    sources: [{
-						type: "application/x-mpegurl",
-						src:  "http://justsome.website:8080/hls/painweb.m3u8"
-					    }]
-					}
-				    });
-				</script>	
-		   	</div>
+	<body background="backgroundmountains.jpg">
+		<div id="header">
+			<center>
+				<img src="backgroundstream.png"  style="position: relative; bottom: 20px"/>
+			</center>
+			<div align="center">
+	       			<div id="player" align="center" style="position: relative; bottom: 1050px"></div>
+					<script>
+					    var player = flowplayer("#player", {
+						clip: {
+						    sources: [{
+							type: "application/x-mpegurl",
+							src:  "http://109.225.126.197:8080/hls/painweb.m3u8"
+						    }]
+						}
+					    });
+					</script>	
+			   	</div>
   		</div>
-       <p>
-       </p>
-	    <div style="text-align:center; ">
-		    <a href="#" class="myButton" onclick="location.href = 'index.html';" style="position: relative; top: 900px;">index</a>
-	    </div>
+	       <p>
+	       </p>
 	</div>
+	    <div id="divA">
+		
+		    <a href="#" class="myButton" onclick="location.href = 'index.html';" style="position: relative; top: 450px;">index</a>
+		
+	    </div>
+	
     </body>
 </html>

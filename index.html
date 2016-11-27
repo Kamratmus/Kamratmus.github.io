@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 		<title>Streamhoran</title>
@@ -60,40 +61,36 @@
 	}
 
 	#header{/*changed closing tags in html to: <div id="header"></div>*/
-	    position: fixed;
-	    top: 0px;
-	    height: 0px;
-	    left: 0px;
-	    right: 0px;
+   		 position: fixed;
+   		 left: 50%;
+   		 top: 50%;
+    		transform: translate(-50%, -50%);
 	}
 	#divA{ 
-	    position: fixed;   
-	    bottom: 170px; /*no height but top/bottom values so containers height changes based on browsersize*/
-	    top: 0px;
+	    position: absolute;   
+	    top: 50%;
 	    left: 4;
 	    right: 4;
 	}
 
 	</style>
 	<body background="backgroundmountains.jpg">
-<div id="header">
+	<div id="header">	
 		<center>
-<p>
-			<img src="backgroundcenter.png"  style="position: relative; bottom: 20px"/>
-
-<p>
-			<img src="giphy.gif" style="width:571px;height:284px; position: relative; bottom: 860px"/>
-</p>
+			<p>
+				<img src="backgroundcenter.png"  style="position: relative; top: 150px"/>
+			</p>
+			<p>
+				<img src="giphy.gif" style="width:571px;height:284px; position: relative; bottom: 700px"/>
+			</p>
 		</center>
-</div>
-<div id="divA">
-	<center>
-				<p>
-					<a href="#" class="myButton2" onclick="location.href = 'kamrat.html';" style="position: relative; top: 550px;">kamrat</a>
-						&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="#" class="myButton" onclick="location.href = 'painweb.html';" style="position: relative; top: 550px;">painweb</a>
-				</p>
-	</center>
-</div>	
+	</div>
+		<div id="divA">
+			<center>
+				<a href="#" class="myButton2" onclick="location.href = 'kamrat.html';" style="position: relative; top: 0px;">kamrat</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="#" class="myButton" onclick="location.href = 'painweb.html';" style="position: relative; top: 0px;">painweb</a>
+			</center>
+		</div>	
 	</body>
 </html>
